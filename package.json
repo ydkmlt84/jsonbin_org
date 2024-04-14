@@ -1,12 +1,12 @@
 {
-  "name": "jsonbin",
-  "version": "2.6.4",
-  "description": "",
+  "name": "MaintainerrBin",
+  "version": "0.0.5",
+  "description": "A self-hosted fork of the JSONbin.org code ",
   "main": "lib/index.js",
   "private": true,
   "engines": {
-    "node": "20.x",
-    "npm": "9.x"
+    "node": ">=20.x",
+    "npm": ">=9.x"
   },
   "scripts": {
     "start": "node .",
@@ -17,18 +17,18 @@
     "deploy": "npm test && now && now alias"
   },
   "keywords": [],
-  "author": "",
+  "author": "ydkmlt84@maintainerr.info",
   "license": "ISC",
   "dependencies": {
     "@remy/envy": "^4.0.2",
     "8fold-marked": "^0.3.9",
     "body-parser": "^1.15.2",
     "compression": "^1.6.2",
-    "connect-mongo": "^2.0.0",
+    "connect-mongo": "^3.0.0",
     "cookie-parser": "^1.4.3",
     "cors": "^2.8.1",
     "express": "*",
-    "express-hbs": "^1.0.3",
+    "express-hbs": "^2.5.0",
     "express-session": "^1.14.2",
     "file-type": "^7.4.0",
     "http-status-codes": "^1.0.6",
@@ -36,14 +36,14 @@
     "json-merge-patch": "^0.2.3",
     "json5": "^1.0.1",
     "jsondiffpatch": "^0.2.4",
-    "jsonwebtoken": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
     "moment": "^2.19.3",
     "mongoose": "^5.10.6",
     "morgan": "^1.7.0",
     "ms": "^2.1.1",
     "multer": "^1.2.1",
     "on-headers": "^1.0.1",
-    "passport": "^0.4.0",
+    "passport": "^0.7.0",
     "passport-github2": "^0.1.10",
     "renvy": "*",
     "request": "^2.87.0",
@@ -51,14 +51,18 @@
     "server-timings": "^1.0.4",
     "shortid": "^2.2.6",
     "undefsafe": "^2.0.3",
-    "universal-analytics": "^0.4.16",
+    "universal-analytics": "^0.5.3",
     "uuid": "^3.0.1"
   },
   "devDependencies": {
-    "@remy/eslint": "^1.3.0",
+    "@remy/eslint": "^3.2.2",
+    "nodemon": "^3.1.0",
     "proxyquire": "^1.7.10",
     "sinon": "^4.1.2",
-    "tap": "^11.0.0",
+    "tap": "^18.7.2",
     "tap-only": "^0.0.5"
+  },
+  "optionalDependencies": {
+    "@reify/fsevents": "2.1.2"
   }
 }
