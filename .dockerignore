@@ -1,9 +1,0 @@
-#ignoring env files
-*.env
-#github workflow files
-*.github
-#other stuff
-.eslintrc.js
-.gitignore
-node_modules
-tmp

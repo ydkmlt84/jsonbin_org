@@ -7,11 +7,11 @@ WORKDIR /opt/app/
 ARG TARGETPLATFORM
 ENV TARGETPLATFORM=${TARGETPLATFORM:-linux/amd64}
 
-COPY . /
+COPY . ./
 
 VOLUME  /opt/config
 
 #Main Run Commands
 WORKDIR /opt/app/
-
+RUN chmod +x /opt/app/docker_run_cmd.sh
 ENTRYPOINT /opt/app/docker_run_cmd.sh
