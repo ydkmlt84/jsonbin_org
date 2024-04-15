@@ -1,3 +1,4 @@
+# This file should be edited and saved as app.config 
 MONGO_URL=mongodb://
 HOST=https://
 
