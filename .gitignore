@@ -7,4 +7,3 @@ tmp
 backups/
 data/
 mongodb.conf
-package-lock.json
