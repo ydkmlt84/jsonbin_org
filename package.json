@@ -20,7 +20,6 @@
   "author": "ydkmlt84@maintainerr.info",
   "license": "ISC",
   "dependencies": {
-    "@remy/envy": "^4.0.2",
     "8fold-marked": "^0.3.9",
     "body-parser": "^1.15.2",
     "compression": "^1.6.2",
@@ -41,21 +40,22 @@
     "mongoose": "^5.10.6",
     "morgan": "^1.7.0",
     "ms": "^2.1.1",
-    "multer": "^1.2.1",
+    "multer": "^1.4.4-lts.1",
     "on-headers": "^1.0.1",
     "passport": "^0.7.0",
     "passport-github2": "^0.1.10",
     "renvy": "*",
     "request": "^2.87.0",
+    "saslprep": "^1.0.3",
     "serve-favicon": "^2.3.2",
     "server-timings": "^1.0.4",
     "shortid": "^2.2.6",
     "undefsafe": "^2.0.3",
     "universal-analytics": "^0.5.3",
-    "uuid": "^3.0.1"
+    "uuid": "^7.0"
   },
   "devDependencies": {
-    "@remy/eslint": "^3.2.2",
+    "@remy/eslint": "^3.2.1",
     "nodemon": "^3.1.0",
     "proxyquire": "^1.7.10",
     "sinon": "^4.1.2",
