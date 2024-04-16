@@ -1,19 +1,15 @@
 <div class='mp'>
 <ol class="man-decor man-head man head">
-  <li class="tl">jsonbin(1)</li>
+  <li class="tl">MaintainerrJSONBin</li>
   <li class="tc">json RESTful store</li>
-  <li class="tr">jsonbin(1)</li>
+  <li class="tr">MaintainerrJSONBin</li>
 </ol>
 
 {{#marked}}
 
 ## NAME
 
-`jsonbin.org` - A personal JSON store as a RESTful service
-
-## SYNOPSIS
-
-curl `{{env.HOST}}/remy/blog`
+`MaintainerrJSONBin` - A personal JSON store as a RESTful service
 
 ## Access
 
@@ -28,14 +24,14 @@ use `example` as the username. {{/if}}
 
 ## DESCRIPTION
 
-`jsonbin.org` is a personal key/value JSON store as a service. Protected behind
+`MaintainerrJSONBin` is a personal key/value JSON store as a service. Protected behind
 authentication and API key requests, data is stored as JSON and can be deep
-linked. A permissioning model also allows specific paths to your store to become
-public to share with others.
+linked. A permissions model can allow specific paths from your store, to become
+public and share with others.
 
-The aim of the project is to provide a simplified data store for tinkerers.
+The aim of the project is to provide a simplified data store for the [Maintainerr Project](https:://maintainerr.info)
 
-**Important:** jsonbin is currently in open beta. If you have questions, please
+**Important:** MaintainerrJSONBin is currently in open beta. If you have questions, please
 get [in touch](#author).
 
 ## Authentication
@@ -47,10 +43,10 @@ in, or an `authorization` token. The token is your
 ```
 curl -X POST {{env.HOST}}/{{username}}/blog \
      -H 'authorization: token {{apikey}}' \
-     -d '{ url: "https://remysharp.com" }'
+     -d '{ url: "https://maintainerr.info" }'
 ```
 
-To use jsonbin in the browser, it's recommended that you use a
+To use MaintainerrJSONBin in the browser, it's recommended that you use a
 [bearer](/_/bearer?path=urls) token with a limited expiry:
 
 ```
@@ -100,7 +96,7 @@ For example:
 curl -X PATCH \
      -H 'authorization: token {{apikey}}' \
      -d'{ "topic": "code" }' \
-     {{env.HOST}}/{{username}}/blog
+     {{env.HOST}}/{{username}}/test
 ```
 
 By default all endpoints are private, but you can modify a specific entry point
@@ -123,7 +119,7 @@ of `null` is sent:
 curl -X PATCH \
      -H 'authorization: token {{apikey}}' \
      -d'{ "title": null }' \
-     {{env.HOST}}/{{username}}/blog
+     {{env.HOST}}/{{username}}/test
 ```
 
 The exception is that when the endpoint is an array, a `PATCH` will _always_
@@ -133,7 +129,7 @@ endpoint, or you can `DELETE` an
 
 ## Example storing files
 
-You can use jsonbin as a shared clipboard across machines. Creating an alias to
+You can use MaintainerrJSONBin as a shared clipboard across machines. Creating an alias to
 upload `STDIN` via `curl` could be posted to a public URL:
 
 ```
@@ -162,15 +158,17 @@ curl -X PATCH {{env.HOST}}/{{username}}/urls \
 
 ## BUGS
 
-This project lives at [jsonbin](https://github.com/remy/jsonbin). Please report
-bugs to [jsonbin/issues](https://github.com/remy/jsonbin/issues).
+This project lives at [github/jsonbin_org](https://github.com/ydkmlt84/jsonbin_org). Please report bugs to [github/jsonbin_org/issues](https://github.com/ydkmlt84/jsonbin_org/issues).
 
 ## AUTHOR
+**Current** Author of THIS Fork -> 
+ydkmlt84 &lt;[ydkmlt84@maintainerr.info](mailto:ydkmlt84@maintainerr.info)&gt;
 
-Remy Sharp &lt;[remy@leftlogic.com](mailto:remy@leftlogic.com)&gt; {{/marked}}
+**Original** Author of JSONBIN ->
+Remy Sharp &lt;[Remy Sharp Github](https://github.com/remy)&gt;
 
 <ol class="man-decor man-foot man foot">
   <li class="tl">V{{version}}</li>
-  <li class="tc">January 2017</li>
-  <li class="tr">jsonbin(1)</li>
+  <li class="tc">April 2024</li>
+  <li class="tr">MaintainerrJSONBin</li>
 </ol>
